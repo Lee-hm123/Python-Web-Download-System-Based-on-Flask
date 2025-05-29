@@ -35,7 +35,7 @@ def download_file(filename):
     try:
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         return send_file(file_path,as_attachment=True)
-    except Exception as e:
+    except Exception:
         abort(500)
 
 
