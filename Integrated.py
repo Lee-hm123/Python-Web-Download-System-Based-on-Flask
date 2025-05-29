@@ -220,7 +220,7 @@ def download_file(filename):
         with open(file_path, 'rb') as f:
             file_content = f.read()
         return file_content
-    except Exception as e:
+    except Exception:
         abort(500)
 
 
